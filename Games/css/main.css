@@ -1,0 +1,122 @@
+body {
+	
+	background-color: rgb(32, 32, 32); /*background color*/
+	
+	/*HEXADECIMAL way of specifying color*/
+	color: #ffffff;	/*text color*/
+
+	/*font-family: "Arial", Times New Roman, sans-serif;*/
+	font-family: 'Roboto', sans-serif;
+	
+	width: 80%;
+	margin: auto;
+	
+}
+
+h1 {
+	
+	font-size: 3em; /*em: relative units, px: pixels, %: percent*/
+	font-family: 'Press Start 2P', cursive;
+	background-color: blue;
+	width: 70%;
+	padding: 50px;
+	border: inset 10px yellow;
+	
+	/*centers text*/
+	text-align: center;
+	
+	/*top, right, bottom, left*/
+	/*margin: 50px 20px 100px 40px;*/
+	
+	/* automatically calculates left & right margins, centers it */
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	position:relative;
+	/*call the animation by their name on the element you wana to animate*/
+	animation-name:bannerAnimation;/*name of animation*/
+	animation-duration:3s;/*duraion*/
+	animation-iteration-count:10s;/*how many times it animates*/
+	animation-timing-function:linear;/*ease,linear,ease-in,east-out,ease-in-out*/
+	animation-direction:reverse;/*normal,reverse,alternate*/
+}
+
+@keyframes bannerAnimation{
+	0%{background-color:red;left:0px;bottom:0px;transform:rotate(0deg);}
+	50%{background-color:grayleft:300px;bottom:200px;transform:rotate(180deg);}
+	100%{background-color:blue;left:0px;bottom:0px;transform:rotate(360deg);}
+	/*
+	from {
+		background-color:blue;
+		color:black;
+		width:5%;
+		font-size:0.2em;
+
+	}
+	to{
+		background-color:orange;
+		color:red;
+		width:80%;
+		font-size:3em;
+	}*/
+	
+}
+/*first use the @keyframes rule to specify the animation to be done*/
+@media(max-width:735px){
+	
+	h1{
+		
+		font-size:1.5em;
+		padding:1.5em;
+		
+		
+	}
+	
+	
+	
+}
+
+/*there rules only get invoked when the screen width is 400px or less*/
+@media(max-width:400px){
+	
+	h1{
+		
+		font-size:1em;
+		padding:1em;
+		
+		
+	}
+	
+	
+	
+}
+
+/*
+h2 a {
+	text-decoration: none;
+}*/
+/*to call ids, use a hashtag before calling the id name */
+/*ids can only be used once per page */
+/*
+#reinhardt {
+	width: 250px; *//* width of image (px, em, %)
+	color: blue;
+}
+*/
+/*
+img {
+	width: 500px;
+}*/
+
+/*to call classes, use a period before calling the class name
+classes can be used multiple times in a page */
+/*.magenta {
+	color: magenta;
+}*/
+
+/*
+audio {
+	display: block;
+	margin: 15px;
+	
+}*/

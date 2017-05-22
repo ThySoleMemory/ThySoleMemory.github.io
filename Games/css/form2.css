@@ -1,0 +1,84 @@
+form{
+	
+	
+	
+	
+	background-color:rgb(50,50,50);
+}
+
+label{
+	
+	color:yellow;
+	
+}
+/*descendant selector: selects only ellements that are descendants of certain elements*/
+div fieldset{
+	background-color:blue;
+}
+/*the inclusive selector(,) selects all elements of either type*/
+p,lebel{
+	color:yellow;
+	
+}
+/*the selecot selector (+)to select only the element that is immediately before the former element */
+h1+p+p+p{
+	
+	color:blue;
+}
+/*the sibling combinator (~) to select any element that is a sibling of anouther element */
+h1 ~ p {
+	
+	background-color:red;
+	
+}
+/*unvisited link*/
+a:link{
+	background-color:gray;
+	
+}
+/*visited link*/
+a:visited{
+	background-color:green;
+	
+}
+/* hovered*/
+p:hover{
+	
+		background-color:yellow;
+		font-size:3em;
+}
+li{
+	list-style:none;
+	
+	
+}
+/* nth-child(n) selects a specific element from a stack.*/
+li:nth-child(2){
+	
+	background-color: magenta;
+	
+}
+li:nth-child(odd){
+	
+	background-color: green;
+	
+}
+li:nth-child(even){
+	
+	background-color: red;
+	
+}
+h3 ~ ul li:nth-child(4):hover{
+	
+	background-color: black;
+	
+	
+	
+}
+
+
+
+
+
+
+
